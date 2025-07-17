@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://prueba-cloud-379400243322.southamerica-west1.run.app';
+const API_BASE_URL = 'https://prueba-cloud-414030780526.southamerica-east1.run.app';
 
 class AlumnoManager {
     constructor() {
