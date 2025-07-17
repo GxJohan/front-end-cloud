@@ -1,5 +1,4 @@
-const API_BASE_URL = 'https://prueba-cloud-414030780526.southamerica-east1.run.app';
-
+const API_BASE_URL = '';
 
 class AlumnoManager {
     constructor() {
@@ -22,7 +21,7 @@ class AlumnoManager {
         this.hideError();
         
         try {
-            const response = await fetch(`${API_BASE_URL}/alumnos`);
+            const response = await fetch('/proxy/alumnos');
             
             if (!response.ok) {
                 throw new Error(`Error del servidor: ${response.status}`);
@@ -74,7 +73,7 @@ class AlumnoManager {
         }
 
         try {
-            const response = await fetch(`${API_BASE_URL}/alumnos`, {
+            const response = await fetch('/proxy/alumnos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
