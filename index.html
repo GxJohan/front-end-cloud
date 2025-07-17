@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Alumnos</h1>
+        
+        <section class="form-section">
+            <h2>Agregar Nuevo Alumno</h2>
+            <form id="alumnoForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <button type="submit">Agregar Alumno</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Lista de Alumnos</h2>
+            <div id="loading" class="loading">Cargando...</div>
+            <div id="error" class="error hidden"></div>
+            <table id="alumnosTable" class="hidden">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody id="alumnosTableBody">
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
